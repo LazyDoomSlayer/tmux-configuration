@@ -1,51 +1,52 @@
-Here's an updated README reflecting your custom `Ctrl + Space` prefix key:
+# Tmux Configuration 🖥️
+
+This is my personal **tmux configuration**, designed to enhance terminal workflows with intuitive key bindings and a clean interface.
 
 ---
 
-# Tmux Plugin Manager (TPM) Setup Guide
+## 🎯 Features
 
-This guide helps you set up the Tmux Plugin Manager (TPM) to easily manage plugins in Tmux.
-
-## 1. Installation
-
-To install TPM, clone the repository into your `.tmux` plugins directory:
-
-```bash
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-```
-
-## 2. Configure Plugins in `.tmux.conf`
-
-Add the following lines to your `~/.tmux.conf` file to enable TPM and any other plugins you'd like to use.
-
-```tmux
-# Initialize TPM (this is required for TPM to work)
-set -g @plugin 'tmux-plugins/tpm'
-
-# Add additional plugins here
-set -g @plugin 'tmux-plugins/tmux-sensible'  # Sensible default Tmux configurations
-
-# Ensure this line is at the very bottom of ~/.tmux.conf
-run '~/.tmux/plugins/tpm/tpm'
-```
-
-## 3. Applying Changes
-
-If Tmux is already running, reload your configuration with this command:
-
-```bash
-tmux source ~/.tmux.conf
-```
-
-## 4. Installing Plugins
-
-Once you've configured your plugins, use the following key combination within a Tmux session to install them:
-
-1. Press the prefix key (`Ctrl + Space` in your setup).
-2. Then press `I` (uppercase i) to install the plugins specified in `~/.tmux.conf`.
-
-This will download and install all the plugins listed.
+- **Custom Key Bindings:** Optimized for faster navigation and workflow.
+- **Enhanced Prefix:** `Ctrl + Space` for an ergonomic prefix key.
+- **Split and Resize Panes:** Effortless terminal pane management.
+- **Session Management:** Easily create, switch, and manage tmux sessions.
+- **Custom Status Bar:** A clean and informative status line.
 
 ---
 
-Now you're ready to use TPM and easily manage your Tmux plugins!
+## ⚡ Installation
+
+1. Clone the repository to your home directory:
+   ```bash
+   git clone https://github.com/LazyDoomSlayer/tmux-configuration ~/.tmux
+   ```
+
+2. Symlink the `.tmux.conf` file:
+   ```bash
+   ln -s ~/.tmux/.tmux.conf ~/.tmux.conf
+   ```
+
+3. Reload tmux to apply the configuration:
+   ```bash
+   tmux source-file ~/.tmux.conf
+   ```
+
+---
+
+## 🔧 Customization
+
+You can tweak the configuration by editing the `.tmux.conf` file directly. Key bindings, appearance, and plugins can all be customized to fit your workflow.
+
+---
+
+## 🛠️ Requirements
+
+- **tmux 3.0 or higher**
+- **A patched terminal font** (e.g., Nerd Fonts) for proper status bar display.
+
+---
+
+## ❤️ Acknowledgments
+
+Special thanks to the tmux community for inspiring this configuration and providing useful resources.
+```
