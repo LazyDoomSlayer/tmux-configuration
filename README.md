@@ -7,7 +7,6 @@ This is my personal **tmux configuration**, designed to enhance terminal workflo
 ## 🎯 Features
 
 - **Custom Key Bindings:** Optimized for faster navigation and workflow.
-- **Enhanced Prefix:** `Ctrl + Space` for an ergonomic prefix key.
 - **Split and Resize Panes:** Effortless terminal pane management.
 - **Session Management:** Easily create, switch, and manage tmux sessions.
 - **Custom Status Bar:** A clean and informative status line.
@@ -16,20 +15,25 @@ This is my personal **tmux configuration**, designed to enhance terminal workflo
 
 ## ⚡ Installation
 
-1. Clone the repository to your home directory:
+1. Install Tmux Package Manager TPM
+
    ```bash
-   git clone https://github.com/LazyDoomSlayer/tmux-configuration ~/.tmux
+   git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
    ```
 
-2. Symlink the `.tmux.conf` file:
+2. Clone the repository to your home directory:
+
    ```bash
-   ln -s ~/.tmux/.tmux.conf ~/.tmux.conf
+   git clone https://github.com/LazyDoomSlayer/tmux-configuration ~/.tmux.conf
    ```
 
 3. Reload tmux to apply the configuration:
+
    ```bash
    tmux source-file ~/.tmux.conf
    ```
+
+4. Install all packages using ( prefix + "I" )
 
 ---
 
@@ -49,4 +53,7 @@ You can tweak the configuration by editing the `.tmux.conf` file directly. Key b
 ## ❤️ Acknowledgments
 
 Special thanks to the tmux community for inspiring this configuration and providing useful resources.
+
+```
+
 ```
