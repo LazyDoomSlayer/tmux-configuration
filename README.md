@@ -24,7 +24,8 @@ This is my personal **tmux configuration**, designed to enhance terminal workflo
 2. Clone the repository to your home directory:
 
    ```bash
-   git clone https://github.com/LazyDoomSlayer/tmux-configuration ~/.tmux.conf
+   git clone https://github.com/LazyDoomSlayer/tmux-configuration 
+   cp ./tmux.conf ~/.tmux.conf
    ```
 
 3. Reload tmux to apply the configuration:
